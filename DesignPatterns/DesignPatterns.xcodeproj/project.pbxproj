@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		005CE92927C2589200AE858E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 005CE92827C2589200AE858E /* main.cpp */; };
+		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		005CE92527C2589200AE858E /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		005CE92827C2589200AE858E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0080B23527C278770025747A /* Composite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Composite.hpp; path = DesignPatterns/Composite.hpp; sourceTree = "<group>"; };
+		0080B23627C278770025747A /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Composite.cpp; path = DesignPatterns/Composite.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,8 @@
 		005CE91C27C2589200AE858E = {
 			isa = PBXGroup;
 			children = (
+				0080B23627C278770025747A /* Composite.cpp */,
+				0080B23527C278770025747A /* Composite.hpp */,
 				005CE92727C2589200AE858E /* DesignPatterns */,
 				005CE92627C2589200AE858E /* Products */,
 			);
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005CE92927C2589200AE858E /* main.cpp in Sources */,
+				0080B23727C278770025747A /* Composite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
