@@ -8,18 +8,14 @@
 #include <iostream>
 #include <memory>
 #include "Composite.hpp"
+#include <cppunit/ui/text/TestRunner.h>
+#include "DesignPatternTestSuite.hpp"
 
 int main(int argc, const char * argv[]) {
-    auto apple = std::make_shared<Composite::SingleFruit>("Apple");
-    auto orange = std::make_shared<Composite::SingleFruit>("Orange");
-    auto banana = std::make_shared<Composite::SingleFruit>("Banana");
-    auto smallFruitBasket = std::make_shared<Composite::CompositeFruits>("SmallFruitBasket");
-    smallFruitBasket->add(orange);
-    smallFruitBasket->add(banana);
     
-    auto largeFruitBasket = std::make_shared<Composite::CompositeFruits>("LargeFruitBasket");
-    largeFruitBasket->add(smallFruitBasket);
-    largeFruitBasket->add(apple);
-    largeFruitBasket->printName();
-    return 0;
+    CppUnit::TextUi::TestRunner runner;
+    runner.addTest( DesignPatternTestSuite::suite() );
+    bool wasSucessful = runner.run();
+    
+    return wasSucessful;
 }
