@@ -12,6 +12,7 @@
 
 void CompositeTest::testComposite()
 {
+    std::cout << "\nCompositeTest - testComposite" << std::endl;
     auto apple = std::make_shared<Composite::SingleFruit>("Apple");
     auto orange = std::make_shared<Composite::SingleFruit>("Orange");
     auto banana = std::make_shared<Composite::SingleFruit>("Banana");
@@ -22,7 +23,8 @@ void CompositeTest::testComposite()
     auto largeFruitBasket = std::make_shared<Composite::CompositeFruits>("LargeFruitBasket");
     largeFruitBasket->add(smallFruitBasket);
     largeFruitBasket->add(apple);
-    largeFruitBasket->printName();
+    std::cout << largeFruitBasket->getComponents();
+    CPPUNIT_ASSERT( largeFruitBasket->getComponents() == "LargeFruitBasket:{SmallFruitBasket:{Orange;Banana;}Apple;}" );
 }
 
 void CompositeTest::setUp(){}

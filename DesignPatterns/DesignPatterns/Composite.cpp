@@ -4,8 +4,8 @@
 //
 //  Created by Alice on 20/2/22.
 //
-
 #include "Composite.hpp"
+#include <sstream>
 namespace Composite
 {
 const std::vector<std::shared_ptr<FruitsComponet>>& FruitsComponet::getChilren()
@@ -13,6 +13,12 @@ const std::vector<std::shared_ptr<FruitsComponet>>& FruitsComponet::getChilren()
     m_childrenVec.clear();
     return m_childrenVec;
 };
+std::string FruitsComponet::getComponents()
+{
+    std::ostringstream oss;
+    oss << m_name << ";";
+    return oss.str();
+}
 void CompositeFruits::add(const std::shared_ptr<FruitsComponet>& FruitsComponet)
 {
     m_childrenVec.push_back(FruitsComponet);
@@ -25,11 +31,13 @@ const std::vector<std::shared_ptr<FruitsComponet>>& CompositeFruits::getChilren(
 {
     return m_childrenVec;
 }
-void CompositeFruits::printName()
+std::string CompositeFruits::getComponents()
 {
-    std::cout<< m_name << " : \n{\n";
-    std::for_each(m_childrenVec.begin(), m_childrenVec.end(), [&](const std::shared_ptr<FruitsComponet>& item){item->printName();});
-    std::cout<<"}"<<std::endl;
+    std::ostringstream oss;
+    oss << m_name << ":{";
+    std::for_each(m_childrenVec.begin(), m_childrenVec.end(), [&](const std::shared_ptr<FruitsComponet>& item){oss << item->getComponents();});
+    oss << "}";
+    return oss.str();
 };
 }
 

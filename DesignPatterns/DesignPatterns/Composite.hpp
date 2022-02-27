@@ -25,7 +25,7 @@ class FruitsComponet/*Abstruct class providing interface for both primative and 
 public:
     virtual ~FruitsComponet(){};
     virtual const std::string& getName(){return m_name;};
-    virtual void printName(){ std::cout<< m_name << "; " <<std::endl;};
+    virtual std::string getComponents();
     virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
     virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
     virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();
@@ -47,7 +47,7 @@ class CompositeFruits : public FruitsComponet/*Composite object*/
 public:
     CompositeFruits(std::string name):FruitsComponet(name){};
     virtual ~CompositeFruits(){};
-    virtual void printName();//showing how the recursive composit works
+    virtual std::string getComponents();//showing how the recursive composit works
     virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet);
     virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet);
     virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();

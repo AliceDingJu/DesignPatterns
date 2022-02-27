@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include <memory>
-#include "Composite.hpp"
 #include <cppunit/ui/text/TestRunner.h>
 #include "DesignPatternTestSuite.hpp"
 
