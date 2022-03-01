@@ -8,6 +8,7 @@
 #ifndef Strategy_hpp
 #define Strategy_hpp
 /*
+ strategy as an alternative to class inheritance
  implement sample of strategy pattern with function pointer
 */
 #include <stdio.h>

@@ -32,7 +32,7 @@ namespace DesignPattern
     protected:
         FruitsComponet(std::string name):m_name(name){};
         const std::string m_name;
-        std::vector<std::shared_ptr<FruitsComponet>> m_childrenVec;
+        std::vector<std::shared_ptr<FruitsComponet>> m_childrenVec;/*child is the componet class it self*/
     };
 
     class SingleFruit : public FruitsComponet/*primative object*/
