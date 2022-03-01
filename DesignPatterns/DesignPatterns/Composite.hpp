@@ -18,40 +18,40 @@
 #include <vector>
 #include <memory>
 
-namespace Composite
+namespace DesignPattern
 {
-class FruitsComponet/*Abstruct class providing interface for both primative and composit objects*/
-{
-public:
-    virtual ~FruitsComponet(){};
-    virtual const std::string& getName(){return m_name;};
-    virtual std::string getComponents();
-    virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
-    virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
-    virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();
-protected:
-    FruitsComponet(std::string name):m_name(name){};
-    const std::string m_name;
-    std::vector<std::shared_ptr<FruitsComponet>> m_childrenVec;
-};
+    class FruitsComponet/*Abstruct class providing interface for both primative and composit objects*/
+    {
+    public:
+        virtual ~FruitsComponet(){};
+        virtual const std::string& getName(){return m_name;};
+        virtual std::string getComponents();
+        virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
+        virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet){};
+        virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();
+    protected:
+        FruitsComponet(std::string name):m_name(name){};
+        const std::string m_name;
+        std::vector<std::shared_ptr<FruitsComponet>> m_childrenVec;
+    };
 
-class SingleFruit : public FruitsComponet/*primative object*/
-{
-public:
-    SingleFruit(std::string name):FruitsComponet(name){};
-    virtual ~SingleFruit(){};
-};
+    class SingleFruit : public FruitsComponet/*primative object*/
+    {
+    public:
+        SingleFruit(std::string name):FruitsComponet(name){};
+        virtual ~SingleFruit(){};
+    };
 
-class CompositeFruits : public FruitsComponet/*Composite object*/
-{
-public:
-    CompositeFruits(std::string name):FruitsComponet(name){};
-    virtual ~CompositeFruits(){};
-    virtual std::string getComponents();//showing how the recursive composit works
-    virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet);
-    virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet);
-    virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();
-};
+    class CompositeFruits : public FruitsComponet/*Composite object*/
+    {
+    public:
+        CompositeFruits(std::string name):FruitsComponet(name){};
+        virtual ~CompositeFruits(){};
+        virtual std::string getComponents();//showing how the recursive composit works
+        virtual void add(const std::shared_ptr<FruitsComponet>& FruitsComponet);
+        virtual void remove(const std::shared_ptr<FruitsComponet>& FruitsComponet);
+        virtual const std::vector<std::shared_ptr<FruitsComponet>>& getChilren();
+    };
 
 }
 

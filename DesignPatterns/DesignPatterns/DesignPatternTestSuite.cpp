@@ -7,12 +7,14 @@
 
 #include "DesignPatternTestSuite.hpp"
 #include "CompositeTest.hpp"
+#include "StrategyTest.hpp"
 
 CppUnit::Test* DesignPatternTestSuite::suite()
 {
     CppUnit::TestSuite* pSuite = new CppUnit::TestSuite("DesignPatternTestSuite");
     
     pSuite->addTest(CompositeTest::suite());
+    pSuite->addTest(StrategyTest::suite());
     
     return pSuite;
 }

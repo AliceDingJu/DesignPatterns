@@ -13,14 +13,14 @@
 void CompositeTest::testComposite()
 {
     std::cout << "\nCompositeTest - testComposite" << std::endl;
-    auto apple = std::make_shared<Composite::SingleFruit>("Apple");
-    auto orange = std::make_shared<Composite::SingleFruit>("Orange");
-    auto banana = std::make_shared<Composite::SingleFruit>("Banana");
-    auto smallFruitBasket = std::make_shared<Composite::CompositeFruits>("SmallFruitBasket");
+    auto apple = std::make_shared<DesignPattern::SingleFruit>("Apple");
+    auto orange = std::make_shared<DesignPattern::SingleFruit>("Orange");
+    auto banana = std::make_shared<DesignPattern::SingleFruit>("Banana");
+    auto smallFruitBasket = std::make_shared<DesignPattern::CompositeFruits>("SmallFruitBasket");
     smallFruitBasket->add(orange);
     smallFruitBasket->add(banana);
     
-    auto largeFruitBasket = std::make_shared<Composite::CompositeFruits>("LargeFruitBasket");
+    auto largeFruitBasket = std::make_shared<DesignPattern::CompositeFruits>("LargeFruitBasket");
     largeFruitBasket->add(smallFruitBasket);
     largeFruitBasket->add(apple);
     std::cout << largeFruitBasket->getComponents();

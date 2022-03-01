@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		005CE92927C2589200AE858E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 005CE92827C2589200AE858E /* main.cpp */; };
+		006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAB527CE21CD00B08C6B /* Strategy.cpp */; };
+		006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */; };
 		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 		0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23B27C513E40025747A /* CompositeTest.cpp */; };
 		0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */; };
@@ -28,6 +30,10 @@
 /* Begin PBXFileReference section */
 		005CE92527C2589200AE858E /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		005CE92827C2589200AE858E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		006EFAB527CE21CD00B08C6B /* Strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Strategy.cpp; sourceTree = "<group>"; };
+		006EFAB627CE21CD00B08C6B /* Strategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Strategy.hpp; sourceTree = "<group>"; };
+		006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StrategyTest.cpp; sourceTree = "<group>"; };
+		006EFABC27CE2C5F00B08C6B /* StrategyTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StrategyTest.hpp; sourceTree = "<group>"; };
 		0080B23527C278770025747A /* Composite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Composite.hpp; sourceTree = "<group>"; };
 		0080B23627C278770025747A /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
 		0080B23B27C513E40025747A /* CompositeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeTest.cpp; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 				0080B23F27C514150025747A /* DesignPatternTestSuite.hpp */,
 				0080B23B27C513E40025747A /* CompositeTest.cpp */,
 				0080B23C27C513E40025747A /* CompositeTest.hpp */,
+				006EFAB527CE21CD00B08C6B /* Strategy.cpp */,
+				006EFAB627CE21CD00B08C6B /* Strategy.hpp */,
+				006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */,
+				006EFABC27CE2C5F00B08C6B /* StrategyTest.hpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -138,6 +148,8 @@
 				0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */,
 				005CE92927C2589200AE858E /* main.cpp in Sources */,
 				0080B23727C278770025747A /* Composite.cpp in Sources */,
+				006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */,
+				006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
