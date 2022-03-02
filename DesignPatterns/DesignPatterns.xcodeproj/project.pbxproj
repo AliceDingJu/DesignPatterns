@@ -11,6 +11,8 @@
 		006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAB527CE21CD00B08C6B /* Strategy.cpp */; };
 		006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */; };
 		006EFAC327CE65CE00B08C6B /* DecoratorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */; };
+		006EFACC27CFA0A200B08C6B /* AbstractFactoryTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */; };
+		006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */; };
 		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 		0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23B27C513E40025747A /* CompositeTest.cpp */; };
 		0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */; };
@@ -38,6 +40,11 @@
 		006EFABF27CE59E600B08C6B /* Decorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decorator.hpp; sourceTree = "<group>"; };
 		006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DecoratorTest.cpp; sourceTree = "<group>"; };
 		006EFAC227CE65CE00B08C6B /* DecoratorTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DecoratorTest.hpp; sourceTree = "<group>"; };
+		006EFAC527CF95A300B08C6B /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		006EFAC827CF9FA500B08C6B /* AbstractFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractFactory.hpp; sourceTree = "<group>"; };
+		006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactoryTest.cpp; sourceTree = "<group>"; };
+		006EFACB27CFA0A200B08C6B /* AbstractFactoryTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractFactoryTest.hpp; sourceTree = "<group>"; };
+		006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactory.cpp; sourceTree = "<group>"; };
 		0080B23527C278770025747A /* Composite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Composite.hpp; sourceTree = "<group>"; };
 		0080B23627C278770025747A /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
 		0080B23B27C513E40025747A /* CompositeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeTest.cpp; sourceTree = "<group>"; };
@@ -90,6 +97,11 @@
 				006EFABF27CE59E600B08C6B /* Decorator.hpp */,
 				006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */,
 				006EFAC227CE65CE00B08C6B /* DecoratorTest.hpp */,
+				006EFAC527CF95A300B08C6B /* Singleton.hpp */,
+				006EFAC827CF9FA500B08C6B /* AbstractFactory.hpp */,
+				006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */,
+				006EFACB27CFA0A200B08C6B /* AbstractFactoryTest.hpp */,
+				006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -152,12 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				006EFAC327CE65CE00B08C6B /* DecoratorTest.cpp in Sources */,
+				006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */,
 				0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */,
 				0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */,
 				005CE92927C2589200AE858E /* main.cpp in Sources */,
 				0080B23727C278770025747A /* Composite.cpp in Sources */,
 				006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */,
 				006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */,
+				006EFACC27CFA0A200B08C6B /* AbstractFactoryTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

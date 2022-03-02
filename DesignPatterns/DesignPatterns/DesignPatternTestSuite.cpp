@@ -9,6 +9,7 @@
 #include "CompositeTest.hpp"
 #include "StrategyTest.hpp"
 #include "DecoratorTest.hpp"
+#include "AbstractFactoryTest.hpp"
 
 CppUnit::Test* DesignPatternTestSuite::suite()
 {
@@ -17,6 +18,7 @@ CppUnit::Test* DesignPatternTestSuite::suite()
     pSuite->addTest(CompositeTest::suite());
     pSuite->addTest(StrategyTest::suite());
     pSuite->addTest(DecoratorTest::suite());
+    pSuite->addTest(AbstractFactoryTest::suite());
     
     return pSuite;
 }
