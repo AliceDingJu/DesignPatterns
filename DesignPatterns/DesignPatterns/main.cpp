@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     
     CppUnit::TextUi::TestRunner runner;
     runner.addTest( DesignPatternTestSuite::suite() );
-    bool wasSucessful = runner.run();
+    bool wasSuccessful = runner.run();
     
-    return wasSucessful;
+    return wasSuccessful;
 }

@@ -13,6 +13,8 @@
 		006EFAC327CE65CE00B08C6B /* DecoratorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */; };
 		006EFACC27CFA0A200B08C6B /* AbstractFactoryTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */; };
 		006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */; };
+		006EFAD127D3B7C500B08C6B /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACF27D3B7C500B08C6B /* Bridge.cpp */; };
+		006EFAE727D4F94C00B08C6B /* BridgeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */; };
 		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 		0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23B27C513E40025747A /* CompositeTest.cpp */; };
 		0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */; };
@@ -45,6 +47,10 @@
 		006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactoryTest.cpp; sourceTree = "<group>"; };
 		006EFACB27CFA0A200B08C6B /* AbstractFactoryTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractFactoryTest.hpp; sourceTree = "<group>"; };
 		006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactory.cpp; sourceTree = "<group>"; };
+		006EFACF27D3B7C500B08C6B /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
+		006EFAD027D3B7C500B08C6B /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
+		006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeTest.cpp; sourceTree = "<group>"; };
+		006EFAE627D4F94C00B08C6B /* BridgeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeTest.hpp; sourceTree = "<group>"; };
 		0080B23527C278770025747A /* Composite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Composite.hpp; sourceTree = "<group>"; };
 		0080B23627C278770025747A /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
 		0080B23B27C513E40025747A /* CompositeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeTest.cpp; sourceTree = "<group>"; };
@@ -84,24 +90,28 @@
 			isa = PBXGroup;
 			children = (
 				005CE92827C2589200AE858E /* main.cpp */,
-				0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */,
 				0080B23F27C514150025747A /* DesignPatternTestSuite.hpp */,
-				0080B23627C278770025747A /* Composite.cpp */,
+				0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */,
 				0080B23527C278770025747A /* Composite.hpp */,
-				0080B23B27C513E40025747A /* CompositeTest.cpp */,
+				0080B23627C278770025747A /* Composite.cpp */,
 				0080B23C27C513E40025747A /* CompositeTest.hpp */,
-				006EFAB527CE21CD00B08C6B /* Strategy.cpp */,
+				0080B23B27C513E40025747A /* CompositeTest.cpp */,
 				006EFAB627CE21CD00B08C6B /* Strategy.hpp */,
-				006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */,
+				006EFAB527CE21CD00B08C6B /* Strategy.cpp */,
 				006EFABC27CE2C5F00B08C6B /* StrategyTest.hpp */,
+				006EFABB27CE2C5F00B08C6B /* StrategyTest.cpp */,
 				006EFABF27CE59E600B08C6B /* Decorator.hpp */,
-				006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */,
 				006EFAC227CE65CE00B08C6B /* DecoratorTest.hpp */,
+				006EFAC127CE65CE00B08C6B /* DecoratorTest.cpp */,
 				006EFAC527CF95A300B08C6B /* Singleton.hpp */,
 				006EFAC827CF9FA500B08C6B /* AbstractFactory.hpp */,
 				006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */,
 				006EFACB27CFA0A200B08C6B /* AbstractFactoryTest.hpp */,
 				006EFACA27CFA0A200B08C6B /* AbstractFactoryTest.cpp */,
+				006EFAD027D3B7C500B08C6B /* Bridge.hpp */,
+				006EFACF27D3B7C500B08C6B /* Bridge.cpp */,
+				006EFAE627D4F94C00B08C6B /* BridgeTest.hpp */,
+				006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -167,10 +177,12 @@
 				006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */,
 				0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */,
 				0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */,
+				006EFAD127D3B7C500B08C6B /* Bridge.cpp in Sources */,
 				005CE92927C2589200AE858E /* main.cpp in Sources */,
 				0080B23727C278770025747A /* Composite.cpp in Sources */,
 				006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */,
 				006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */,
+				006EFAE727D4F94C00B08C6B /* BridgeTest.cpp in Sources */,
 				006EFACC27CFA0A200B08C6B /* AbstractFactoryTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
