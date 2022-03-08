@@ -15,6 +15,8 @@
 		006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACD27CFB25B00B08C6B /* AbstractFactory.cpp */; };
 		006EFAD127D3B7C500B08C6B /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFACF27D3B7C500B08C6B /* Bridge.cpp */; };
 		006EFAE727D4F94C00B08C6B /* BridgeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */; };
+		006EFAEA27D63E2A00B08C6B /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAE827D63E2A00B08C6B /* Command.cpp */; };
+		006EFB0027D78F3900B08C6B /* CommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006EFAFE27D78F3900B08C6B /* CommandTest.cpp */; };
 		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 		0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23B27C513E40025747A /* CompositeTest.cpp */; };
 		0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */; };
@@ -51,6 +53,10 @@
 		006EFAD027D3B7C500B08C6B /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
 		006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeTest.cpp; sourceTree = "<group>"; };
 		006EFAE627D4F94C00B08C6B /* BridgeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeTest.hpp; sourceTree = "<group>"; };
+		006EFAE827D63E2A00B08C6B /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		006EFAE927D63E2A00B08C6B /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
+		006EFAFE27D78F3900B08C6B /* CommandTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandTest.cpp; sourceTree = "<group>"; };
+		006EFAFF27D78F3900B08C6B /* CommandTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CommandTest.hpp; sourceTree = "<group>"; };
 		0080B23527C278770025747A /* Composite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Composite.hpp; sourceTree = "<group>"; };
 		0080B23627C278770025747A /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
 		0080B23B27C513E40025747A /* CompositeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeTest.cpp; sourceTree = "<group>"; };
@@ -112,6 +118,10 @@
 				006EFACF27D3B7C500B08C6B /* Bridge.cpp */,
 				006EFAE627D4F94C00B08C6B /* BridgeTest.hpp */,
 				006EFAE527D4F94C00B08C6B /* BridgeTest.cpp */,
+				006EFAE927D63E2A00B08C6B /* Command.hpp */,
+				006EFAE827D63E2A00B08C6B /* Command.cpp */,
+				006EFAFF27D78F3900B08C6B /* CommandTest.hpp */,
+				006EFAFE27D78F3900B08C6B /* CommandTest.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -180,6 +190,8 @@
 				006EFAD127D3B7C500B08C6B /* Bridge.cpp in Sources */,
 				005CE92927C2589200AE858E /* main.cpp in Sources */,
 				0080B23727C278770025747A /* Composite.cpp in Sources */,
+				006EFAEA27D63E2A00B08C6B /* Command.cpp in Sources */,
+				006EFB0027D78F3900B08C6B /* CommandTest.cpp in Sources */,
 				006EFABD27CE2C5F00B08C6B /* StrategyTest.cpp in Sources */,
 				006EFAB727CE21CD00B08C6B /* Strategy.cpp in Sources */,
 				006EFAE727D4F94C00B08C6B /* BridgeTest.cpp in Sources */,

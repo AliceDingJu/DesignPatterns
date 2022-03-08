@@ -11,6 +11,7 @@
 #include "DecoratorTest.hpp"
 #include "AbstractFactoryTest.hpp"
 #include "BridgeTest.hpp"
+#include "CommandTest.hpp"
 
 CppUnit::Test* DesignPatternTestSuite::suite()
 {
@@ -21,6 +22,7 @@ CppUnit::Test* DesignPatternTestSuite::suite()
     pSuite->addTest(DecoratorTest::suite());
     pSuite->addTest(AbstractFactoryTest::suite());
     pSuite->addTest(BridgeTest::suite());
+    pSuite->addTest(CommandTest::suite());
     
     return pSuite;
 }
