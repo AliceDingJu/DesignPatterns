@@ -20,6 +20,8 @@
 		0080B23727C278770025747A /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23627C278770025747A /* Composite.cpp */; };
 		0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23B27C513E40025747A /* CompositeTest.cpp */; };
 		0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */; };
+		00F78496284CDC5B0005097B /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00F78494284CDC5B0005097B /* Iterator.cpp */; };
+		00F78499284CDCA00005097B /* IteratorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00F78497284CDCA00005097B /* IteratorTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +65,10 @@
 		0080B23C27C513E40025747A /* CompositeTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CompositeTest.hpp; sourceTree = "<group>"; };
 		0080B23E27C514150025747A /* DesignPatternTestSuite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DesignPatternTestSuite.cpp; sourceTree = "<group>"; };
 		0080B23F27C514150025747A /* DesignPatternTestSuite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DesignPatternTestSuite.hpp; sourceTree = "<group>"; };
+		00F78494284CDC5B0005097B /* Iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iterator.cpp; sourceTree = "<group>"; };
+		00F78495284CDC5B0005097B /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
+		00F78497284CDCA00005097B /* IteratorTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IteratorTest.cpp; sourceTree = "<group>"; };
+		00F78498284CDCA00005097B /* IteratorTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IteratorTest.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				006EFAE827D63E2A00B08C6B /* Command.cpp */,
 				006EFAFF27D78F3900B08C6B /* CommandTest.hpp */,
 				006EFAFE27D78F3900B08C6B /* CommandTest.cpp */,
+				00F78495284CDC5B0005097B /* Iterator.hpp */,
+				00F78494284CDC5B0005097B /* Iterator.cpp */,
+				00F78498284CDCA00005097B /* IteratorTest.hpp */,
+				00F78497284CDCA00005097B /* IteratorTest.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -186,6 +196,8 @@
 				006EFAC327CE65CE00B08C6B /* DecoratorTest.cpp in Sources */,
 				006EFACE27CFB25B00B08C6B /* AbstractFactory.cpp in Sources */,
 				0080B23D27C513E40025747A /* CompositeTest.cpp in Sources */,
+				00F78496284CDC5B0005097B /* Iterator.cpp in Sources */,
+				00F78499284CDCA00005097B /* IteratorTest.cpp in Sources */,
 				0080B24027C514150025747A /* DesignPatternTestSuite.cpp in Sources */,
 				006EFAD127D3B7C500B08C6B /* Bridge.cpp in Sources */,
 				005CE92927C2589200AE858E /* main.cpp in Sources */,

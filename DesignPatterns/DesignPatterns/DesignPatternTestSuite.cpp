@@ -12,6 +12,7 @@
 #include "AbstractFactoryTest.hpp"
 #include "BridgeTest.hpp"
 #include "CommandTest.hpp"
+#include "IteratorTest.hpp"
 
 CppUnit::Test* DesignPatternTestSuite::suite()
 {
@@ -23,6 +24,7 @@ CppUnit::Test* DesignPatternTestSuite::suite()
     pSuite->addTest(AbstractFactoryTest::suite());
     pSuite->addTest(BridgeTest::suite());
     pSuite->addTest(CommandTest::suite());
+    pSuite->addTest(IteratorTest::suite());
     
     return pSuite;
 }
